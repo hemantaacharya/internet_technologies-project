@@ -96,7 +96,7 @@ section .title::after{
 }
 .navbar .logo a{
     color:maroon;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 .navbar .logo a span{
@@ -112,10 +112,10 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
-    font-size: 18px;
+    color: rgb(105, 63, 63);
+    font-size: 20px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 10px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
@@ -164,7 +164,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/learning.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -179,12 +179,15 @@ section .title::after{
 .home .max-width .row{
   margin-right: 0;
 }
+
 .home .home-content .text-1{
     font-size: 27px;
+    color: #111;
 }
 .home .home-content .text-2{
     color: black;
     font-size: 56px;
+
     font-weight: 500;
     margin-left: -80px;
 }
@@ -195,6 +198,9 @@ section .title::after{
 .home .home-content .text-3 span{
     color: maroon;
     font-weight: 500;
+}
+.home .home-content{
+    margin-left: 400px ;
 }
 .home .home-content a{
     display: inline-block;
@@ -215,48 +221,50 @@ section .title::after{
     background: none;
 }
 
-/* about section styling */
-.about .title::after{
-    content: "who i am";
+/* services section styling */
+.services, .teams{
+    color:#fff;
+    background: #111;
 }
-.about .about-content .left{
-    width: 45%;
+.services .title::before,
+.teams .title::before{
+    background: #fff;
 }
-.about .about-content .left img{
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    border-radius: 50%;
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i provide";
 }
-.about .about-content .right{
-    width: 55%;
-}
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.about .about-content .right .text span{
-    color: maroon;
-}
-.about .about-content .right p{
-    text-align: justify;
-}
-.about .about-content .right a{
-    display: inline-block;
-    background: maroon;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
+.services .serv-content .card{
+    width: calc(20% - 5px);
+    background: #222;
+    text-align: center;
     border-radius: 6px;
-    border: 2px solid maroon;
+    padding: 50px 25px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.services .serv-content .card:hover{
+    background: maroon;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
     color: maroon;
-    background: none;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* services section styling */
